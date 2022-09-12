@@ -1,0 +1,352 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={ggplot-data-visualization-titanic-dataset.R},
+  pdfauthor={niallguerin},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{ggplot-data-visualization-titanic-dataset.R}
+\author{niallguerin}
+\date{2022-09-12}
+
+\begin{document}
+\maketitle
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Assignment 5: ggplot}
+\CommentTok{\# Description: This code is using the titanic dataset and generating visualizations from it.}
+\CommentTok{\# Student ID: 18235079}
+\CommentTok{\# Niall Guerin}
+\CommentTok{\# 21.10.2018}
+\CommentTok{\#}
+\CommentTok{\# Dataset contains empty values so will need to allow for handling NA per tutor lab notes}
+\FunctionTok{library}\NormalTok{(readxl)}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+\FunctionTok{library}\NormalTok{(tidyverse)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## -- Attaching packages --------------------------------------- tidyverse 1.3.2 --
+## v tibble  3.1.8      v dplyr   1.0.10
+## v tidyr   1.2.1      v stringr 1.4.1 
+## v readr   2.1.2      v forcats 0.5.2 
+## v purrr   0.3.4      
+## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{orig\_list }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(readxl}\SpecialCharTok{::}\FunctionTok{read\_excel}\NormalTok{(}\StringTok{"/Users/niallguerin/rprogramming/week5{-}ggplot{-}data{-}visualization/titanic3\_assignment.xls"}\NormalTok{))}
+\NormalTok{plist }\OtherTok{\textless{}{-}}\NormalTok{ orig\_list}
+
+\FunctionTok{dim}\NormalTok{(plist)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 1309    7
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# convert plist$survived to logical values}
+\CommentTok{\# Web Reference: https://stackoverflow.com/questions/37707060/converting{-}data{-}frame{-}column{-}from{-}character{-}to{-}numeric}
+\NormalTok{plist}\SpecialCharTok{$}\NormalTok{survived }\OtherTok{\textless{}{-}} \FunctionTok{as.logical}\NormalTok{(}\FunctionTok{as.numeric}\NormalTok{(plist}\SpecialCharTok{$}\NormalTok{survived))}
+\CommentTok{\# convert plist$pclass to string of cabin class}
+\NormalTok{plist}\SpecialCharTok{$}\NormalTok{pclass }\OtherTok{=} \FunctionTok{ifelse}\NormalTok{(plist}\SpecialCharTok{$}\NormalTok{pclass }\SpecialCharTok{==} \DecValTok{1}\NormalTok{,}\StringTok{"First"}\NormalTok{,}\FunctionTok{ifelse}\NormalTok{(plist}\SpecialCharTok{$}\NormalTok{pclass }\SpecialCharTok{==} \DecValTok{2}\NormalTok{,}\StringTok{"Second"}\NormalTok{, }\StringTok{"Third"}\NormalTok{))}
+\FunctionTok{unique}\NormalTok{(plist}\SpecialCharTok{$}\NormalTok{pclass)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "First"  "Second" "Third"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# imputation of age for missing values {-} replace missing values with existing average e.g. mean}
+\CommentTok{\# mean = 29.8811345124283}
+\CommentTok{\# summary of age with NA incomplete cases removed}
+\CommentTok{\# slides week 5 {-} change, updating, handling na values}
+\CommentTok{\# Web Reference: https://stackoverflow.com/questions/25835643/replace{-}missing{-}values{-}with{-}column{-}mean}
+\CommentTok{\# update the fares in similar fashion}
+\NormalTok{plist}\SpecialCharTok{$}\NormalTok{age[}\FunctionTok{is.na}\NormalTok{(plist}\SpecialCharTok{$}\NormalTok{age)] }\OtherTok{\textless{}{-}} \FunctionTok{mean}\NormalTok{(plist}\SpecialCharTok{$}\NormalTok{age, }\AttributeTok{na.rm =}\NormalTok{ T)}
+\NormalTok{plist}\SpecialCharTok{$}\NormalTok{fare[}\FunctionTok{is.na}\NormalTok{(plist}\SpecialCharTok{$}\NormalTok{fare)] }\OtherTok{\textless{}{-}} \FunctionTok{mean}\NormalTok{(plist}\SpecialCharTok{$}\NormalTok{fare, }\AttributeTok{na.rm =}\NormalTok{ T)}
+
+\CommentTok{\# update the embark values}
+\CommentTok{\# use same format for next section and ensure only S, C, and Q are allowed in that column}
+\CommentTok{\# Web Reference: http://www.rexamples.com/14/Sample()}
+\FunctionTok{set.seed}\NormalTok{(}\DecValTok{99}\NormalTok{)}
+\NormalTok{plist}\SpecialCharTok{$}\NormalTok{embarked[}\FunctionTok{is.na}\NormalTok{(plist}\SpecialCharTok{$}\NormalTok{embarked)] }\OtherTok{\textless{}{-}} \FunctionTok{sample}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\StringTok{"S"}\NormalTok{, }\StringTok{"C"}\NormalTok{, }\StringTok{"Q"}\NormalTok{), }\AttributeTok{replace =}\NormalTok{ T)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in plist$embarked[is.na(plist$embarked)] <- sample(c("S", "C", "Q"), :
+## number of items to replace is not a multiple of replacement length
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# this gives a warning not error in my macbook when I run it from Source function in IDE. In console it worked. It did not affect graphs}
+\CommentTok{\# and unique(plist$embark) gives required result per assignment dataset prep validation step later in pdf assignment document}
+
+\CommentTok{\# add new dataframe category}
+\CommentTok{\# rules for category: Child (\textless{}16), Adults (\textgreater{}=16 \& \textless{}60) and Elderly (\textgreater{}=60)}
+\CommentTok{\# validation column: uncomment to validate your changes are pulling back correct age\_cohort when you pull back all row data by age}
+\CommentTok{\# Initially my ifelse had errors due to a \textless{}= 60 on the adult which caused incorrect tallies during later validation step of dataset}
+\CommentTok{\# And my ifelse order was also initially wrong as elderly were getting ignored. After fixing per below correct tallies returned}
+\CommentTok{\# plist[plist$age\_cohort == "Child", ]}
+\CommentTok{\# plist[plist$age\_cohort == "Elderly", ]}
+\CommentTok{\# plist[plist$age\_cohort == "Adult", ]}
+\CommentTok{\# plist[plist$age \textless{} 16, ]}
+\CommentTok{\# plist[plist$age == 16, ]}
+\CommentTok{\# plist[plist$age == 60, ]}
+\CommentTok{\# plist[plist$age \textgreater{} 60, ]}
+\CommentTok{\# plist[plist$age == 63, ]}
+\NormalTok{plist}\SpecialCharTok{$}\NormalTok{age\_cohort }\OtherTok{\textless{}{-}} \FunctionTok{ifelse}\NormalTok{(plist}\SpecialCharTok{$}\NormalTok{age }\SpecialCharTok{\textless{}} \DecValTok{16}\NormalTok{,}\StringTok{"Child"}\NormalTok{,}\FunctionTok{ifelse}\NormalTok{(plist}\SpecialCharTok{$}\NormalTok{age }\SpecialCharTok{\textgreater{}=} \DecValTok{16} \SpecialCharTok{\&}\NormalTok{ plist}\SpecialCharTok{$}\NormalTok{age }\SpecialCharTok{\textless{}} \DecValTok{60}\NormalTok{,}\StringTok{"Adult"}\NormalTok{, }\StringTok{"Elderly"}\NormalTok{))}
+
+\CommentTok{\# update embark points to use full strings and replacement per rules}
+\NormalTok{plist}\SpecialCharTok{$}\NormalTok{embarked }\OtherTok{=} \FunctionTok{ifelse}\NormalTok{(plist}\SpecialCharTok{$}\NormalTok{embarked }\SpecialCharTok{==} \StringTok{"Q"}\NormalTok{,}\StringTok{"Cobh"}\NormalTok{,}\FunctionTok{ifelse}\NormalTok{(plist}\SpecialCharTok{$}\NormalTok{embarked }\SpecialCharTok{==} \StringTok{"S"}\NormalTok{,}\StringTok{"Southhampton"}\NormalTok{, }\StringTok{"Cherbourg"}\NormalTok{))}
+
+\CommentTok{\# validate dataset before graphing: uncomment to validate against pp. 11}
+\CommentTok{\# head(plist)}
+\CommentTok{\# dim(plist)}
+\CommentTok{\# table(plist$survived,plist$sex)}
+\CommentTok{\# table(plist$survived)}
+\CommentTok{\# table(plist$survived, plist$pclass)}
+\CommentTok{\# table(plist$survived, plist$age\_cohort)}
+\CommentTok{\# table(plist$survived, plist$embarked)}
+
+\CommentTok{\# plot configurations for titanic plist dataframe plots 1 {-} 14}
+\CommentTok{\# Web Reference: https://rstudio{-}pubs{-}static.s3.amazonaws.com/291083\_2b0374fddc464ed08b4eb16c95d84075.html}
+\CommentTok{\# Web Reference: https://stackoverflow.com/questions/6022898/how{-}can{-}i{-}remove{-}the{-}legend{-}title{-}in{-}ggplot2}
+\CommentTok{\# Web Reference: http://r{-}statistics.co/ggplot2{-}Tutorial{-}With{-}R.html}
+\CommentTok{\# The following are mainly driven off of template code I had created during the week 5 lecture on ggplot2 in lecture lab in IT101 when}
+\CommentTok{\# working with samples on the projector from lecture for the cars dataset so I just adapted it here for titanic dataset and main}
+\CommentTok{\# additions which I was not familiar with were the legends, titles, subtitles, and label customizations.}
+\NormalTok{plot1 }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{( }\AttributeTok{data=}\NormalTok{plist, }\FunctionTok{aes}\NormalTok{(survived) ) }\SpecialCharTok{+} \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{fill =}\NormalTok{ pclass, }\AttributeTok{y =}\NormalTok{ ..count..), }\AttributeTok{stat =} \StringTok{"count"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{ylab}\NormalTok{(}\StringTok{"Number"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{xlab}\NormalTok{(}\StringTok{"Survived"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{labs}\NormalTok{(}\AttributeTok{title=}\StringTok{"Plot 1"}\NormalTok{, }\AttributeTok{subtitle=}\StringTok{"Survival Numbers by Travel Class"}\NormalTok{, }\AttributeTok{fill=}\StringTok{""}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{theme}\NormalTok{(}\AttributeTok{legend.position=}\StringTok{"top"}\NormalTok{, }\AttributeTok{legend.direction=}\StringTok{"horizontal"}\NormalTok{)}
+\NormalTok{plot2 }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{( }\AttributeTok{data=}\NormalTok{plist, }\FunctionTok{aes}\NormalTok{(survived) ) }\SpecialCharTok{+} \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{fill =}\NormalTok{ sex, }\AttributeTok{y =}\NormalTok{ ..count..), }\AttributeTok{stat =} \StringTok{"count"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{ylab}\NormalTok{(}\StringTok{"Number"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{xlab}\NormalTok{(}\StringTok{"Survived"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Plot 2"}\NormalTok{, }\AttributeTok{subtitle=}\StringTok{"Survival Numbers by Gender"}\NormalTok{, }\AttributeTok{fill=}\StringTok{""}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{theme}\NormalTok{(}\AttributeTok{legend.position=}\StringTok{"top"}\NormalTok{, }\AttributeTok{legend.direction=}\StringTok{"horizontal"}\NormalTok{)}
+\NormalTok{plot3 }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{( }\AttributeTok{data=}\NormalTok{plist, }\FunctionTok{aes}\NormalTok{(survived) ) }\SpecialCharTok{+} \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{fill =}\NormalTok{ age\_cohort, }\AttributeTok{y =}\NormalTok{ ..count..), }\AttributeTok{stat =} \StringTok{"count"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{ylab}\NormalTok{(}\StringTok{"Number"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{xlab}\NormalTok{(}\StringTok{"Survived"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{labs}\NormalTok{(}\AttributeTok{title=}\StringTok{"Plot 3"}\NormalTok{, }\AttributeTok{subtitle=}\StringTok{"Survival Numbers by Age Cohort"}\NormalTok{, }\AttributeTok{fill=}\StringTok{""}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{theme}\NormalTok{(}\AttributeTok{legend.position=}\StringTok{"top"}\NormalTok{, }\AttributeTok{legend.direction=}\StringTok{"horizontal"}\NormalTok{)}
+\NormalTok{plot4 }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{( }\AttributeTok{data=}\NormalTok{plist, }\FunctionTok{aes}\NormalTok{(survived) ) }\SpecialCharTok{+} \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{fill =}\NormalTok{ embarked, }\AttributeTok{y =}\NormalTok{ ..count..), }\AttributeTok{stat =} \StringTok{"count"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{ylab}\NormalTok{(}\StringTok{"Number"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{xlab}\NormalTok{(}\StringTok{"Survived"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{labs}\NormalTok{(}\AttributeTok{title=}\StringTok{"Plot 4"}\NormalTok{, }\AttributeTok{subtitle=}\StringTok{"Survival Numbers by Embarkation Location"}\NormalTok{, }\AttributeTok{fill=}\StringTok{""}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{theme}\NormalTok{(}\AttributeTok{legend.position=}\StringTok{"top"}\NormalTok{, }\AttributeTok{legend.direction=}\StringTok{"horizontal"}\NormalTok{)}
+\NormalTok{plot5 }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{( }\AttributeTok{data=}\NormalTok{plist, }\FunctionTok{aes}\NormalTok{(survived) ) }\SpecialCharTok{+} \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{fill =}\NormalTok{ pclass), }\AttributeTok{position=}\StringTok{"fill"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{ylab}\NormalTok{(}\StringTok{"Proportion"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{xlab}\NormalTok{(}\StringTok{"Survived"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{labs}\NormalTok{(}\AttributeTok{title=}\StringTok{"Plot 5"}\NormalTok{, }\AttributeTok{subtitle=}\StringTok{"Survival Proportions by Class"}\NormalTok{, }\AttributeTok{fill=}\StringTok{""}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{theme}\NormalTok{(}\AttributeTok{legend.position=}\StringTok{"top"}\NormalTok{, }\AttributeTok{legend.direction=}\StringTok{"horizontal"}\NormalTok{)}
+\NormalTok{plot6 }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{( }\AttributeTok{data=}\NormalTok{plist, }\FunctionTok{aes}\NormalTok{(survived) ) }\SpecialCharTok{+} \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{fill =}\NormalTok{ sex), }\AttributeTok{position=}\StringTok{"fill"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{ylab}\NormalTok{(}\StringTok{"Proportion"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{xlab}\NormalTok{(}\StringTok{"Survived"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{labs}\NormalTok{(}\AttributeTok{title=}\StringTok{"Plot 6"}\NormalTok{, }\AttributeTok{subtitle=}\StringTok{"Survival Proportions by Gender"}\NormalTok{, }\AttributeTok{fill=}\StringTok{""}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{theme}\NormalTok{(}\AttributeTok{legend.position=}\StringTok{"top"}\NormalTok{, }\AttributeTok{legend.direction=}\StringTok{"horizontal"}\NormalTok{)}
+\NormalTok{plot7 }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{( }\AttributeTok{data=}\NormalTok{plist, }\FunctionTok{aes}\NormalTok{(survived) ) }\SpecialCharTok{+} \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{fill =}\NormalTok{ age\_cohort), }\AttributeTok{position=}\StringTok{"fill"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{ylab}\NormalTok{(}\StringTok{"Proportion"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{xlab}\NormalTok{(}\StringTok{"Survived"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{labs}\NormalTok{(}\AttributeTok{title=}\StringTok{"Plot 7"}\NormalTok{, }\AttributeTok{subtitle=}\StringTok{"Survival Proportions by Age Cohort"}\NormalTok{, }\AttributeTok{fill=}\StringTok{""}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{theme}\NormalTok{(}\AttributeTok{legend.position=}\StringTok{"top"}\NormalTok{, }\AttributeTok{legend.direction=}\StringTok{"horizontal"}\NormalTok{)}
+\NormalTok{plot8 }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{( }\AttributeTok{data=}\NormalTok{plist, }\FunctionTok{aes}\NormalTok{(survived) ) }\SpecialCharTok{+} \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{fill =}\NormalTok{ embarked), }\AttributeTok{position=}\StringTok{"fill"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{ylab}\NormalTok{(}\StringTok{"Proportion"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{xlab}\NormalTok{(}\StringTok{"Survived"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{labs}\NormalTok{(}\AttributeTok{title=}\StringTok{"Plot 8"}\NormalTok{, }\AttributeTok{subtitle=}\StringTok{"Survival Proportions by Place of Embarkation"}\NormalTok{, }\AttributeTok{fill=}\StringTok{""}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{theme}\NormalTok{(}\AttributeTok{legend.position=}\StringTok{"top"}\NormalTok{, }\AttributeTok{legend.direction=}\StringTok{"horizontal"}\NormalTok{)}
+\NormalTok{plot9 }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{( }\AttributeTok{data=}\NormalTok{plist, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ survived, }\AttributeTok{fill=}\NormalTok{ age\_cohort) ) }\SpecialCharTok{+} \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{fill =}\NormalTok{ age\_cohort, }\AttributeTok{y =}\NormalTok{ ..count..), }\AttributeTok{stat =} \StringTok{"count"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{ylab}\NormalTok{(}\StringTok{"Number"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{xlab}\NormalTok{(}\StringTok{"Survived"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{facet\_grid}\NormalTok{(}\SpecialCharTok{\textasciitilde{}}\NormalTok{ pclass) }\SpecialCharTok{+} \FunctionTok{labs}\NormalTok{(}\AttributeTok{title=}\StringTok{"Plot 9"}\NormalTok{, }\AttributeTok{subtitle=}\StringTok{"Survival Numbers by Cohort and Travel Class"}\NormalTok{, }\AttributeTok{fill=}\StringTok{""}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{theme}\NormalTok{(}\AttributeTok{legend.position=}\StringTok{"top"}\NormalTok{, }\AttributeTok{legend.direction=}\StringTok{"horizontal"}\NormalTok{)}
+\NormalTok{plot10 }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{( }\AttributeTok{data=}\NormalTok{plist, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ survived, }\AttributeTok{fill=}\NormalTok{ sex) ) }\SpecialCharTok{+} \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{fill =}\NormalTok{ sex, }\AttributeTok{y =}\NormalTok{ ..count..), }\AttributeTok{stat =} \StringTok{"count"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{ylab}\NormalTok{(}\StringTok{"Number"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{xlab}\NormalTok{(}\StringTok{"Survived"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{facet\_grid}\NormalTok{(}\SpecialCharTok{\textasciitilde{}}\NormalTok{ pclass) }\SpecialCharTok{+} \FunctionTok{labs}\NormalTok{(}\AttributeTok{title=}\StringTok{"Plot 10"}\NormalTok{, }\AttributeTok{subtitle=}\StringTok{"Survival Numbers by Gender and Travel Class"}\NormalTok{, }\AttributeTok{fill=}\StringTok{""}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{theme}\NormalTok{(}\AttributeTok{legend.position=}\StringTok{"top"}\NormalTok{, }\AttributeTok{legend.direction=}\StringTok{"horizontal"}\NormalTok{)}
+\NormalTok{plot11 }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data=}\NormalTok{plist) }\SpecialCharTok{+} \FunctionTok{geom\_point}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ age, }\AttributeTok{y =}\NormalTok{ fare, }\AttributeTok{colour =}\NormalTok{ embarked)) }\SpecialCharTok{+} \FunctionTok{ylab}\NormalTok{(}\StringTok{"Fare"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{xlab}\NormalTok{(}\StringTok{"Age"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{labs}\NormalTok{(}\AttributeTok{title=}\StringTok{"Plot 11"}\NormalTok{, }\AttributeTok{subtitle=}\StringTok{"Age v Fare by Place of Embarkation"}\NormalTok{, }\AttributeTok{colour=}\StringTok{""}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{theme}\NormalTok{(}\AttributeTok{legend.position=}\StringTok{"top"}\NormalTok{, }\AttributeTok{legend.direction=}\StringTok{"horizontal"}\NormalTok{)}
+\NormalTok{plot12 }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data =}\NormalTok{ plist, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ age, }\AttributeTok{y =}\NormalTok{ fare)) }\SpecialCharTok{+} \FunctionTok{geom\_point}\NormalTok{(}\AttributeTok{color=}\StringTok{\textquotesingle{}black\textquotesingle{}}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{ylab}\NormalTok{(}\StringTok{"Fare"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{xlab}\NormalTok{(}\StringTok{"Age"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{labs}\NormalTok{(}\AttributeTok{title=}\StringTok{"Plot 12"}\NormalTok{, }\AttributeTok{subtitle=}\StringTok{"Age v Fare with Linear Model"}\NormalTok{, }\AttributeTok{colour=}\StringTok{""}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{theme}\NormalTok{(}\AttributeTok{legend.position=}\StringTok{"top"}\NormalTok{, }\AttributeTok{legend.direction=}\StringTok{"horizontal"}\NormalTok{)  }\SpecialCharTok{+} \FunctionTok{geom\_smooth}\NormalTok{(}\AttributeTok{method =} \StringTok{"lm"}\NormalTok{)}
+\NormalTok{plot13 }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data=}\NormalTok{plist) }\SpecialCharTok{+} \FunctionTok{geom\_point}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ age, }\AttributeTok{y =}\NormalTok{ fare, }\AttributeTok{colour =}\NormalTok{ survived)) }\SpecialCharTok{+} \FunctionTok{ylab}\NormalTok{(}\StringTok{"Fare"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{xlab}\NormalTok{(}\StringTok{"Age"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{labs}\NormalTok{(}\AttributeTok{title=}\StringTok{"Plot 13"}\NormalTok{, }\AttributeTok{subtitle=}\StringTok{"Age v Fare with Survival Info"}\NormalTok{, }\AttributeTok{colour=}\StringTok{""}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{theme}\NormalTok{(}\AttributeTok{legend.position=}\StringTok{"top"}\NormalTok{, }\AttributeTok{legend.direction=}\StringTok{"horizontal"}\NormalTok{)}
+\NormalTok{plot14 }\OtherTok{\textless{}{-}} \FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data=}\NormalTok{plist) }\SpecialCharTok{+} \FunctionTok{geom\_point}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ age, }\AttributeTok{y =}\NormalTok{ fare, }\AttributeTok{colour =}\NormalTok{ embarked)) }\SpecialCharTok{+} \FunctionTok{facet\_wrap}\NormalTok{(}\SpecialCharTok{\textasciitilde{}}\NormalTok{pclass) }\SpecialCharTok{+} \FunctionTok{ylab}\NormalTok{(}\StringTok{"Fare"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{xlab}\NormalTok{(}\StringTok{"Age"}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{labs}\NormalTok{(}\AttributeTok{title=}\StringTok{"Plot 14"}\NormalTok{, }\AttributeTok{subtitle=}\StringTok{"Age v Fare by Travel Class and Point of Depature"}\NormalTok{, }\AttributeTok{colour=}\StringTok{""}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{theme}\NormalTok{(}\AttributeTok{legend.position=}\StringTok{"top"}\NormalTok{, }\AttributeTok{legend.direction=}\StringTok{"horizontal"}\NormalTok{)}
+
+\CommentTok{\# validation against assignment visualization graphs {-} uncomment and run in console to display graph by variable name plot1, plot2 etc.}
+\NormalTok{plot1}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ggplot-data-visualization-titanic-dataset_files/figure-latex/unnamed-chunk-1-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plot2}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ggplot-data-visualization-titanic-dataset_files/figure-latex/unnamed-chunk-1-2.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plot3}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ggplot-data-visualization-titanic-dataset_files/figure-latex/unnamed-chunk-1-3.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plot4}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ggplot-data-visualization-titanic-dataset_files/figure-latex/unnamed-chunk-1-4.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plot5}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ggplot-data-visualization-titanic-dataset_files/figure-latex/unnamed-chunk-1-5.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plot6}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ggplot-data-visualization-titanic-dataset_files/figure-latex/unnamed-chunk-1-6.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plot8}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ggplot-data-visualization-titanic-dataset_files/figure-latex/unnamed-chunk-1-7.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plot9}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ggplot-data-visualization-titanic-dataset_files/figure-latex/unnamed-chunk-1-8.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plot10}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ggplot-data-visualization-titanic-dataset_files/figure-latex/unnamed-chunk-1-9.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plot11}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ggplot-data-visualization-titanic-dataset_files/figure-latex/unnamed-chunk-1-10.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plot12}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## `geom_smooth()` using formula 'y ~ x'
+\end{verbatim}
+
+\includegraphics{ggplot-data-visualization-titanic-dataset_files/figure-latex/unnamed-chunk-1-11.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plot13}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ggplot-data-visualization-titanic-dataset_files/figure-latex/unnamed-chunk-1-12.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plot14}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ggplot-data-visualization-titanic-dataset_files/figure-latex/unnamed-chunk-1-13.pdf}
+
+\end{document}
