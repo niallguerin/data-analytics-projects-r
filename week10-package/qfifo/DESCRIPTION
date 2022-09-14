@@ -1,0 +1,13 @@
+Package: qfifo
+Title: A simple queue class written in S3
+Version: 0.1
+Authors@R: person("Niall", "Guerin", email = "n.guerin1@nuigalway.ie",
+                  role = c("aut", "cre"))
+Description: This package contains a simple queue class which facilitates enqueue, peek, and dequeue operations.
+Depends: R (>= 3.4.0)
+License: MIT + file LICENSE 
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat
+Imports: stringr
+RoxygenNote: 6.1.1
