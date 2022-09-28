@@ -18,8 +18,6 @@ The goal is to experiment with dataframe structures and use aggregate functions 
 ### week5-ggplot-titanic-dataset-visualizations.R
 The goal is to use the Titanic dataset and perform data visualizations using ggplot.
 
-To view the data visualization plots, you can use this [PDF report](https://1drv.ms/b/s!Alcoa8KLVJaoiLUm2-0Y72mJDnTzIw?e=dKAb40) version of the R script.
-
 ### week6-flights-dataset-dplyr.R
 The goal is to use dplyr to analyze and filter data in the nycflights13 flights dataset.
 
